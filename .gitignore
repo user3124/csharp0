@@ -15,7 +15,7 @@
 *.idb
 *.pch
 
-## Игнорировать папки сборки
+## Игнорировать папки сборки, кроме bin\Release
 [Dd]ebug/
 [Dd]ebugPublic/
 [Rr]elease/
@@ -24,9 +24,12 @@ x64/
 x86/
 [Bb]uild/
 bld/
-[Bb]in/
 [Oo]bj/
 [Oo]utput/
+
+# Исключаем bin\Release — будем добавлять в Git
+!bin/Release/
+!bin/Release/**
 
 ## Игнорировать файлы пакетов NuGet
 packages/
